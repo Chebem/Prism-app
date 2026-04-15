@@ -1,9 +1,10 @@
-const COLORS = {
+const Colors = {
     
     // Brand Colors
     primary: '#D4537E',                 // main buttons, active tabs 
     primaryDark:  '#9B3A6A',            // pressed states
     primaryLight: '#F4C0D1',            // backgrounds, pills 
+
 
     // Accent beams (prism logo colors)
     currency:     '#EF9F27',            // currency tool
@@ -11,23 +12,33 @@ const COLORS = {
     weight:       '#5DCAA5',            // weight & length tool
     bmi:          '#378ADD',            // BMI tool
 
+
     // Light mode
-    lightBg:      '#FDF8F5',            // page background
-    lightSurface: '#FAF0F3',            // section backgrounds
-    lightCard:    '#FFFFFF',            //  cards
-    lightBorder:  '#F0D8DF',            //  border
-    lightText:    '#2D1B2E',            //  headings
-    lightMuted:   '#9B7E85',            // subtitles, labels
+    light: {
+        text:             '#9B7E85',
+        title:            '#2D1B2E',
+        background:       '#FDF8F5',
+        navBackground:    '#FAF0F3',
+        iconColor:        '#B5858A',
+        iconColorFocused: '#2D1B2E',
+        uiBackground:     '#F4EEF0',
+        card:             '#FFFFFF',
+        border:           '#F0D8DF',
+    },
 
 
-    // Dark mode
-    darkBg:       '#1A1025',            // page background
-    darkSurface:  '#130C1E',            // section backgrounds
-    darkCard:     '#251832',            // cards
-    darkBorder:   '#3D2B4E',            // border
-    darkText:     '#F0E8FF',            //  eadings
-    darkMuted:    '#8B7A9E',            // subtitles, labels
-
+     // Dark mode 
+    dark: {
+        text:             '#8B7A9E',
+        title:            '#F0E8FF',
+        background:       '#1A1025',
+        navBackground:    '#130C1E',
+        iconColor:        '#6B5A80',
+        iconColorFocused: '#F0E8FF',
+        uiBackground:     '#251832',
+        card:             '#251832',
+        border:           '#3D2B4E',
+    },
 
     //semantic colors
     success:      '#1D9E75',           // normal BMI, success states
@@ -42,4 +53,4 @@ const COLORS = {
 
 }
 
-export default COLORS
+export default Colors
